@@ -1,0 +1,45 @@
+.post {
+  height: 40px;
+  width: 60%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2rem;
+  padding: 0.2rem;
+  border: 1px solid blue;
+  transition: all .1s ease-in;
+}
+
+.post:hover .post__title {
+  text-shadow: 1px 1px 8px black;
+}
+
+.post:hover {
+  border-width: 2px;
+}
+
+.post__image {
+  height: 100%;
+}
+
+.post__title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.post__date {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 768px) {
+  .post {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .post {
+    width: 100%;
+  }
+}
