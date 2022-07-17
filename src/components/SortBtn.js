@@ -10,11 +10,9 @@ export const SortBtn = (props) => {
   }
 
   const sort = () => {
-    // console.log(toSort)
     toggle()
     const sortedPosts = _.sortBy(props.posts, [post => post.time])
     props.action(sortedPosts.reverse())
-    // console.log(toSort)
   }
 
   return (

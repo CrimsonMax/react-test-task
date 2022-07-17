@@ -15,7 +15,6 @@ function App() {
     setIsLoading(true)
     const response = await axios.get('https://api.stackexchange.com/2.2/search?intitle=react&site=stackoverflow')
     const postsArray = _.filter(response.data.items, elem => elem.is_answered && elem.owner.reputation > 50)
-    // const postsArray = _.sortBy(response.data.items, [elem => elem.creation_date])
     setMessages(postsArray)
     setIsLoading(false)
   }
