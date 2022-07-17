@@ -1,0 +1,27 @@
+.sortBtn {
+  height: 30px;
+  background-color: #fff;
+  padding: 0 0.5rem;
+  border: 2px solid red;
+  border-radius: 0.2rem;
+  transition: all 0.1s ease-in;
+}
+
+.sortBtn-down::after {
+  content: "\25BC";
+}
+
+.sortBtn-up::after {
+  content: "\25B2";
+}
+
+.sortBtn-down::after,
+.sortBtn-up::after {
+  margin-left: 0.1rem;
+}
+
+.sortBtn:hover {
+  cursor: pointer;
+  background-color: red;
+  color: #fff;
+}

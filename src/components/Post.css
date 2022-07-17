@@ -5,17 +5,22 @@
   justify-content: flex-start;
   align-items: center;
   gap: 2rem;
-  padding: 0.2rem;
+  padding: .2rem .3rem;
   border: 1px solid blue;
   transition: all .1s ease-in;
 }
 
-.post:hover .post__title {
-  text-shadow: 1px 1px 8px black;
+.post:hover {
+  background-color: blue;
+  color: #fff;
 }
 
-.post:hover {
-  border-width: 2px;
+.post:visited {
+  color: purple;
+}
+
+.post:visited:hover {
+  background-color: lightskyblue;
 }
 
 .post__image {
