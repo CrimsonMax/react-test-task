@@ -1,0 +1,11 @@
+h1 {
+  color: mediumblue;
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  border: 0;
+  background-color: mediumblue;
+  margin: 0.5rem 0;
+}

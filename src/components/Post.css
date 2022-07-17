@@ -10,17 +10,8 @@
   transition: all .1s ease-in;
 }
 
-.post:hover {
-  background-color: blue;
-  color: #fff;
-}
-
 .post:visited {
   color: purple;
-}
-
-.post:visited:hover {
-  background-color: lightskyblue;
 }
 
 .post__image {
@@ -46,5 +37,16 @@
 @media screen and (max-width: 426px) {
   .post {
     width: 100%;
+  }
+}
+
+@media (hover: hover) {
+  .post:hover {
+    background-color: blue;
+    color: #fff;
+  }
+  
+  .post:visited:hover {
+    background-color: lightskyblue;
   }
 }
