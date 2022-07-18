@@ -5,7 +5,6 @@ import { useEffect, useState } from 'react';
 import { Header } from './components/Header';
 import axios from 'axios';
 import _ from 'lodash';
-import { Loader } from './components/Loader';
 
 function App() {
   const [messages, setMessages] = useState([])
@@ -28,10 +27,7 @@ function App() {
     <div className='App'>
       <Header />
       <SortBtn posts={messages} action={setMessages} />
-      {isLoading
-        ? <Loader />
-        : <SortedList props={messages} />
-      }
+      <SortedList postArray={messages} flag={isLoading} />
     </div>
   );
 }
