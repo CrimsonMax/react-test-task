@@ -6,7 +6,7 @@ export const SortBtn = (props) => {
   const [toSort, setToSort] = useState(true)
 
   const toggle = () => {
-    setToSort(!toSort)
+    props.posts.length > 0 && setToSort(!toSort)
   }
 
   const sort = () => {
